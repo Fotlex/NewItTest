@@ -55,11 +55,15 @@ git clone https://github.com/Fotlex/NewItTest.git
 
 3. Поочередно пропишите команды для запуска 
 
-make build    # Сборка Docker образов
-make up       # Запуск контейнеров
-make static   # Сбор статических файлов
-make migrate  # Применение миграций базы данных
-make superuser # Создание суперпользователя
+    make build    # Сборка Docker образов
+   
+    make up       # Запуск контейнеров
+   
+    make static   # Сбор статических файлов
+   
+    make migrate  # Применение миграций базы данных
+   
+    make superuser # Создание суперпользователя
 
 
 
