@@ -2,7 +2,6 @@ from pathlib import Path
 
 from .config import config
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config.DJANGO_SECRET_KEY
@@ -20,6 +19,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "rangefilter",
     "backend.tracker.apps.TrackerConfig",
 ]
 
@@ -109,5 +110,5 @@ CELERY_TIMEZONE = TIME_ZONE
 
 
 ADMIN_REORDER = [
-     {"app": "tracker", "label": "ДДС"},
+    {"app": "tracker", "label": "ДДС"},
 ]
